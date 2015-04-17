@@ -13,4 +13,10 @@ angular.module('dashboardAppApp', [
       .otherwise('/');
 
     $locationProvider.html5Mode(true);
+  })
+  .run(function($stormpath){
+    $stormpath.uiRouter({
+    loginState: 'login',
+    defaultPostLoginState: 'main'
   });
+});
