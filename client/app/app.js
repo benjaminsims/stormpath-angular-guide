@@ -4,7 +4,9 @@ angular.module('dashboardAppApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ui.router'
+  'ui.router',
+  'stormpath',
+  'stormpath.templates'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider
